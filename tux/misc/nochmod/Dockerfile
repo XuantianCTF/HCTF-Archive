@@ -22,6 +22,8 @@ RUN echo '只要你能运行这个程序，就能拿到 flag' > /home/ctf/hint.t
     chmod 644 /home/ctf/hint.txt && \
     chown ctf:ctf /home/ctf/hint.txt
 
+RUN echo '你或许会C语言，但是C语言和内核之间是如何交接的呢？' > /home/ctf/hint.txt
+
 RUN printf 'a0804f0aa29e95bcf04dc25501aab2ed2e95bf044279ea\n' > /flag && \
     chmod 444 /flag && \
     chown root:root /flag
