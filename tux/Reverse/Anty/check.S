@@ -34,7 +34,7 @@ check_flag_asm:
     and     rax, 1          /* 提取 CF (Carry Flag) 标志位 */
 
     /* 验证算术结果 */
-    mov     rax, 0xD6799CF9ACBDCEDF
+    mov     rax, 0xBAA15C9468878A15
     cmp     r12, rax
     jne     .Lfail
 
